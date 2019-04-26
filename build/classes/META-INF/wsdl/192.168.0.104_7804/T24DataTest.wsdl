@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><!--File T24DataTest.wsdl, application T24DataTest--><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="T24DataTest" targetNamespace="http://T24DataTest" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://T24DataTest" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="T24DataTestHttpBinding" originalBindingStyle="document"/>
+        <generatedXSD location="T24DataTest_InlineSchema1.xsd"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  
+  
+  
+  
+  
+  
+  
+  
+  <wsdl:types>
+    
+        <xsd:schema targetNamespace="http://T24DataTest" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+      <xsd:include schemaLocation="http://192.168.0.104:7804/T24DataTest?xsd=xsd0"/>
+    </xsd:schema>
+    </wsdl:types>
+  <wsdl:message name="TestRequestMsg">
+    <wsdl:part element="tns:Test" name="TestParameters"/>
+  </wsdl:message>
+  <wsdl:message name="TestResponseMsg">
+    <wsdl:part element="tns:TestResponse" name="TestResult"/>
+  </wsdl:message>
+    <wsdl:message name="Test2RequestMsg">
+    <wsdl:part element="tns:Test2" name="Test2Parameters"/>
+  </wsdl:message>
+    <wsdl:message name="Test2ResponseMsg">
+    <wsdl:part element="tns:Test2Response" name="Test2Result"/>
+  </wsdl:message>
+    <wsdl:message name="Test3RequestMsg">
+    <wsdl:part element="tns:Test3" name="Test3Parameters"/>
+  </wsdl:message>
+    <wsdl:message name="Test3ResponseMsg">
+    <wsdl:part element="tns:Test3Response" name="Test3Result"/>
+  </wsdl:message>
+    <wsdl:message name="Test4RequestMsg">
+    <wsdl:part element="tns:Test4" name="Test4Parameters"/>
+  </wsdl:message>
+    <wsdl:message name="Test4ResponseMsg">
+    <wsdl:part element="tns:Test4Response" name="Test4Result"/>
+  </wsdl:message>
+    <wsdl:message name="Test5RequestMsg">
+    <wsdl:part element="tns:Test5" name="Test5Parameters"/>
+  </wsdl:message>
+    <wsdl:message name="Test5ResponseMsg">
+    <wsdl:part element="tns:Test5Response" name="Test5Result"/>
+  </wsdl:message>
+    <wsdl:message name="RemoveSpecialCharRequestMsg">
+    <wsdl:part element="tns:RemoveSpecialChar" name="RemoveSpecialCharParameters"/>
+  </wsdl:message>
+    <wsdl:message name="RemoveSpecialCharResponseMsg">
+    <wsdl:part element="tns:RemoveSpecialCharResponse" name="RemoveSpecialCharResult"/>
+  </wsdl:message>
+    <wsdl:message name="Test6RequestMsg">
+    <wsdl:part element="tns:Test6" name="Test6Parameters"/>
+  </wsdl:message>
+    <wsdl:message name="Test6ResponseMsg">
+    <wsdl:part element="tns:Test6Response" name="Test6Result"/>
+  </wsdl:message>
+    <wsdl:message name="CalculatorRequestMsg">
+    <wsdl:part element="tns:Calculator" name="CalculatorParameters"/>
+  </wsdl:message>
+    <wsdl:message name="CalculatorResponseMsg">
+    <wsdl:part element="tns:CalculatorResponse" name="CalculatorResult"/>
+  </wsdl:message>
+    <wsdl:portType name="T24DataTest">
+    <wsdl:operation name="Test">
+      <wsdl:input message="tns:TestRequestMsg" name="TestRequest"/>
+      <wsdl:output message="tns:TestResponseMsg" name="TestResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="Test2">
+      <wsdl:input message="tns:Test2RequestMsg" name="Test2Request"/>
+      <wsdl:output message="tns:Test2ResponseMsg" name="Test2Response"/>
+    </wsdl:operation>
+        <wsdl:operation name="Test3">
+      <wsdl:input message="tns:Test3RequestMsg" name="Test3Request"/>
+      <wsdl:output message="tns:Test3ResponseMsg" name="Test3Response"/>
+    </wsdl:operation>
+        <wsdl:operation name="Test4">
+      <wsdl:input message="tns:Test4RequestMsg" name="Test4Request"/>
+      <wsdl:output message="tns:Test4ResponseMsg" name="Test4Response"/>
+    </wsdl:operation>
+        <wsdl:operation name="Test5">
+      <wsdl:input message="tns:Test5RequestMsg" name="Test5Request"/>
+      <wsdl:output message="tns:Test5ResponseMsg" name="Test5Response"/>
+    </wsdl:operation>
+        <wsdl:operation name="RemoveSpecialChar">
+      <wsdl:input message="tns:RemoveSpecialCharRequestMsg" name="RemoveSpecialCharRequest"/>
+      <wsdl:output message="tns:RemoveSpecialCharResponseMsg" name="RemoveSpecialCharResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="Test6">
+      <wsdl:input message="tns:Test6RequestMsg" name="Test6Request"/>
+      <wsdl:output message="tns:Test6ResponseMsg" name="Test6Response"/>
+    </wsdl:operation>
+        <wsdl:operation name="Calculator">
+      <wsdl:input message="tns:CalculatorRequestMsg" name="CalculatorRequest"/>
+      <wsdl:output message="tns:CalculatorResponseMsg" name="CalculatorResponse"/>
+    </wsdl:operation>
+    </wsdl:portType>
+  <wsdl:binding name="T24DataTestHttpBinding" type="tns:T24DataTest">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="Test">
+            <soap:operation soapAction="http://T24DataTest/Test"/>
+            <wsdl:input name="TestRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="TestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="Test2">
+            <soap:operation soapAction="http://T24DataTest/Test2"/>
+            <wsdl:input name="Test2Request">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="Test2Response">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="Test3">
+            <soap:operation soapAction="http://T24DataTest/Test3"/>
+            <wsdl:input name="Test3Request">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="Test3Response">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="Test4">
+            <soap:operation soapAction="http://T24DataTest/Test4"/>
+            <wsdl:input name="Test4Request">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="Test4Response">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="Test5">
+            <soap:operation soapAction="http://T24DataTest/Test5"/>
+            <wsdl:input name="Test5Request">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="Test5Response">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="RemoveSpecialChar">
+            <soap:operation soapAction="http://T24DataTest/RemoveSpecialChar"/>
+            <wsdl:input name="RemoveSpecialCharRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="RemoveSpecialCharResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="Test6">
+            <soap:operation soapAction="http://T24DataTest/Test6"/>
+            <wsdl:input name="Test6Request">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="Test6Response">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="Calculator">
+      <soap:operation soapAction="http://T24DataTest/Calculator"/>
+      <wsdl:input name="CalculatorRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CalculatorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    </wsdl:binding>
+  <wsdl:service name="T24DataTestHttpService">
+    <wsdl:port binding="tns:T24DataTestHttpBinding" name="T24DataTestHttpPort">
+      <soap:address location="http://192.168.0.104:7804/T24DataTest"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://192.168.0.104:7804/T24DataTest?wsdl" uri="xml-resources/web-service-references/T24DataTest/wsdl/192.168.0.104_7804/T24DataTest.wsdl"/>
+    <system systemId="http://192.168.0.104:7804/T24DataTest?xsd=xsd0" uri="xml-resources/web-service-references/T24DataTest/wsdl/192.168.0.104_7804/T24DataTest.xsd_xsd0.xsd"/>
+</catalog>

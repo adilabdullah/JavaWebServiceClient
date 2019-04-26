@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><!--File T24DataTest_InlineSchema1.xsd, application T24DataTest--><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://T24DataTest" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://T24DataTest" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+      <xsd:element ibmSchExtn:docRoot="true" name="Test">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input1" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element ibmSchExtn:docRoot="true" name="TestResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="output1" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="input1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test2Response">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="output1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test3">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="input1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test3Response">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="output1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test4">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="input" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test4Response">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="output" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test5">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="input1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test5Response">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="output1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="RemoveSpecialChar">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="input1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="RemoveSpecialCharResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="output1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test6">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="input1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Test6Response">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="output1" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="Calculator">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="value1" nillable="true" type="xsd:string"/>
+        <xsd:element name="value2" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="CalculatorResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="result" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
